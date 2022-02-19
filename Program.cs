@@ -3,6 +3,7 @@
  либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, 
  лучше обойтись исключительно массивами. */
 using static System.Console;
+Clear();
 
 void PrintStringArray(string[] stringArray)
 {
@@ -52,5 +53,5 @@ PrintStringArray(stringArray);
 /* WriteLine(SearchStringSizeLessNumber(stringArray)); */
 int sizeNewArray = SearchStringSizeLessNumber(stringArray);
 string[] newStringArray = CreateArrayWidthSizeLessNumber(stringArray, sizeNewArray);
-Write(" => ");
+Write(" -> ");
 PrintStringArray(newStringArray);
