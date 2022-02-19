@@ -31,7 +31,26 @@ int SearchStringSizeLessNumber(string[] stringArray)
     return numberOfString;
 }
 
+string[] CreateArrayWidthSizeLessNumber(string[] stringArray, int sizeNewArray)
+{
+    string[] newStringArray = new string[sizeNewArray];
+    int j = 0;
+    for (int i = 0; i < stringArray.Length; i++)
+    {
+        if (stringArray[i].Length < 4)
+        {
+            newStringArray[j] = stringArray[i];
+            j++;
+        }
+
+    }
+    return newStringArray;
+}
+
 string[] stringArray = { "hello", "2", "world", ":-)" };
 PrintStringArray(stringArray);
-WriteLine();
-WriteLine(SearchStringSizeLessNumber(stringArray));
+/* WriteLine(SearchStringSizeLessNumber(stringArray)); */
+int sizeNewArray = SearchStringSizeLessNumber(stringArray);
+string[] newStringArray = CreateArrayWidthSizeLessNumber(stringArray, sizeNewArray);
+Write(" => ");
+PrintStringArray(newStringArray);
