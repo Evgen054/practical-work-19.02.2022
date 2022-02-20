@@ -18,7 +18,6 @@ void PrintStringArray(string[] stringArray)
     }
     Write("]");
 }
-
 int SearchStringSizeLessNumber(string[] stringArray)
 {
     int numberOfString = 0;
@@ -31,7 +30,6 @@ int SearchStringSizeLessNumber(string[] stringArray)
     }
     return numberOfString;
 }
-
 string[] CreateArrayWidthSizeLessNumber(string[] stringArray, int sizeNewArray)
 {
     string[] newStringArray = new string[sizeNewArray];
@@ -47,7 +45,6 @@ string[] CreateArrayWidthSizeLessNumber(string[] stringArray, int sizeNewArray)
     }
     return newStringArray;
 }
-
 string[] stringArray = { "hello", "2", "world", ":-)" };
 PrintStringArray(stringArray);
 /* WriteLine(SearchStringSizeLessNumber(stringArray)); */
