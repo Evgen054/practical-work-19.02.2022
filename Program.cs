@@ -52,3 +52,4 @@ int sizeNewArray = SearchStringSizeLessNumber(stringArray);
 string[] newStringArray = CreateArrayWidthSizeLessNumber(stringArray, sizeNewArray);
 Write(" -> ");
 PrintStringArray(newStringArray);
+PrintStringArray(newStringArray);
